@@ -28,14 +28,19 @@
     <script>
       $(document).ready(function() {
         $("#media").lightGallery({
-          thumbWidth: 80,
+          thumbWidth: 60,
           controls: true,
-          loop : false,
+          loop : true,
           download: true,
           counter: true,
           videojs: true,
           fullScreen: true,
-          zoom: true
+          zoom: false,
+          hideBarsDelay: 1000,
+          showBarsAfter: 5000,
+          speed: 200,
+          pause: 3000,
+          progressBar: false
         });
       });
     </script>
